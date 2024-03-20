@@ -385,6 +385,46 @@ img {
   color: #13CDE7;
 }
 
+#testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+  height: 100vh;
+  margin-top: 80px;
+}
+
+
+.testimonial {
+  padding: 30px;
+  font-size: 24px;
+  font-family: 'plus-jakarta-sans';
+  text-align: center;
+  background-color: #1D1D1D;
+  min-height: 420px;
+  max-height: 440px;
+  min-width: 320px;
+  max-width: 500px;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  align-items: center;
+  gap: 1em;
+  flex: 1;
+}
+
+.testimonial  h1 {
+  color: var(--first-color);
+}
+
+.testimonial  > .content {
+  font-size: 80%;
+  line-height: 1.6;
+  font-weight: lighter;
+  
+}
+
 
 
 
@@ -404,7 +444,8 @@ img {
    background-image: url(/assets/img/bg-phone-home.png);
     background-size: 500px;
   }
- 
+
+
 
 
 }
@@ -449,11 +490,14 @@ img {
     font-size: 32px;
   }
 
+  #testimonials {
+    
+    flex-direction: column;
+  }
+
+
 
 }
-
-
-
 
 
 
@@ -506,5 +550,9 @@ img {
   .header__logo {
     margin-top: 40px;
     
+  }
+
+  .testimonial .content {
+    font-size: 24px;
   }
 }
