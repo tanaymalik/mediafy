@@ -41,6 +41,12 @@
   src: url("/assets/PlusJakartaSans-ExtraBold.ttf");
 }
 
+@font-face {
+  font-family: "hamlin-bold";
+  src: url("/assets/Hamlin-Bold.ttf");
+}
+
+
 
 
 
@@ -209,11 +215,11 @@ img {
 }
 
 .header_middle_txt {
-  max-width: 150px;
+  max-width: 120px;
 }
 
 .header__nav {
-  height: var(--header-height);
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -225,17 +231,18 @@ img {
 }
 
 .header__logo {
-  max-width: 60px;
+  max-width: 48px;
   max-height: 60px;
   
 }
 
 .header_middle_txt {
-  align-self: center;
+  align-self: flex-end;
+  margin-bottom: 8px;
 }
 
 .header__toggle {
-  font-size: 1.15rem;
+  
   cursor: pointer;
 }
 
@@ -296,15 +303,13 @@ img {
 }
 
 .quote {
- 
+  font-family: 'hamlin-bold';
   position: absolute;
   top: 10%;
   text-align: center;
   margin-top: 20px;
   font-size: 48px;
-  background: -webkit-linear-gradient(right, #7F70FF, #7C56D9, #A951EF, #C584ED);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--first-color);
 }
 
 .hero-home > button {
@@ -331,7 +336,9 @@ img {
 }
 
 #skills > h1 {
-  font-size: 64px;
+  font-size: 48px;
+  text-align: center;
+  font-family: 'hamlin-bold';
 }
 
 #skills > div {
@@ -437,8 +444,13 @@ img {
   align-items: center;
 }
 
-#about > div > p {
+
+#about > h1 {
   color: var(--first-color);
+}
+
+#about > div > p {
+  color: whtie;
 }
 
 #about > div {
