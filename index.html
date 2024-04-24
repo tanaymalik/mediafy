@@ -10,7 +10,10 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="icon" href="/assets/img/logo.svg" type="image/icon type">
-
+        
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
         <title>mediafy</title>
     </head>
     <body>
@@ -48,7 +51,7 @@
                 </nav>
                 <hr>
                 <div class="marquee">
-                <p class="content">Mediafy is an agency that specializes in graphic design, web development and a multitude of services bla bla bla bla</marquee></p>
+                <p class="content">Mediafy stands as a premier creative and marketing agency on a global scale, boasting a plethora of satisfied clientele. With over a year of dedicated experience, our operational leadership brings forth a decade's worth of expertise in the field, solidifying our position as industry frontrunners.</marquee></p>
             </div>
             </div>
             </header>
@@ -58,38 +61,282 @@
             <!--=============== HOME ===============-->
             <section class="section section__height container" id="home">
                
-                  
+               
+                <img src="/assets/img/logo-phone.png" alt="" class="logo" data-anijs="if: scroll, do: flipInY animated">
 
                   
                 <h1>Let's infuse your brand with life</h1>
 
-                <button>Let's Talk</button>
+                <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/tanaymalik06/fix-meeting?preview_source=et_card&month=2024-04'});return false;">Let's Talk</button>
 
                 <img src="assets/img/arrow.png" alt="" class="arrow">
 
                 <h2>You're One Click Away From Success.</h2>
 
+                <div id="testimonials">
+                    <div class="swiper mySwiper">
+                        
+                        <div class="swiper-wrapper">
+                      <div class=" swiper-slide">
+                        <div>
+                          <img src="/assets/faces/face-1-male.png" alt="" class="test-img">
+                            <p>Sterling Fitzgerald</p>
+                        </div>
+                          <h2 class="review">"Mediafy transformed our brand identity
+                            into something truly remarkable"
+                          
+                          </h2>
+                          
+                       
+                       
+                      </div>
+                      <div class=" swiper-slide">
+                        <div>
+                          <img src="/assets/faces/face-6-male.png" alt="" class="test-img">
+                            <p>Daxton Hayes</p>
+                        </div>
+                          <h2 class="review">"Mediafy nailed it, crafting a standout brand identity and website design that matched our vision flawlessly."
+                          
+                          </h2>
+                          
+                       
+                       
+                      </div>
+                      <div class=" swiper-slide">
+                        <div>
+                          <img src="/assets/faces/face-5-male.png" alt="" class="test-img">
+                            <p>Ellis Drake</p>
+                        </div>
+                          <h2 class="review">"Thanks to Mediafy, our brand now stands out in a crowded market, thanks to their impeccable design and strategic approach to website development."
+                          
+                          </h2>
+                          
+                       
+                       
+                      </div>
+                      <div class=" swiper-slide">
+                        <div>
+                          <img src="/assets/faces/face-4-male.png" alt="" class="test-img">
+                            <p>Leander Tate</p>
+                        </div>
+                          <h2 class="review">"Mediafy's attention to detail is unparalleled – they turned our brand into an online sensation with their exceptional design."
+                          
+                          </h2>
+                          
+                       
+                       
+                      </div>
+                       
+                      <div class=" swiper-slide">
+                        <div>
+                          <img src="/assets/faces/face-3-female.png" alt="" class="test-img">
+                            <p>Elena Petrov</p>
+                        </div>
+                          <h2 class="review">"Highly recommend Mediafy for their innovative approach to branding and web design – they know how to make businesses shine."
+                          
+                          </h2>
+                          
+                       
+                       
+                      </div>
+                      <div class=" swiper-slide">
+                        <div>
+                          <img src="/assets/faces/face-2-male.png" alt="" class="test-img">
+                            <p>Henrik Jensen</p>
+                        </div>
+                          <h2 class="review">"Mediafy exceeded our expectations, delivering a sleek brand identity and website design that perfectly encapsulated our vision."
+                          
+                          </h2>
+                          
+                       
+                       
+                      </div>
+                      </div>
+                      </div>
+    
+                    
+                </div>
 
                 
             </section>
 
              <!--=============== SKILLS ===============-->
              <section class="section section__height container" id="services">
-                <h1>Services</h1>
+                    <h2>Our Services</h2>
+                    <h1>Design, Develop, Grow</h1>
+
+                    <div class="services-container">
+
+                        <div class="service-card one">
+                            
+                            <div class="top-bar">
+                                <img src="/assets/img/01.png" alt="">
+
+                                <p>Design</p>
+                            </div>
+
+                            <div class="hero">
+                            <h1>Graphic & Visuals Design.</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                 when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                                 . </p>
+                            
+                        </div>
+                        <img src="/assets/img/graphic-design-visual.png" alt="">
+                        </div>
+
+                        <div class="service-card two">
+
+                            <div class="top-bar">
+                                <img src="/assets/img/02.png" alt="">
+
+                                <p>Develop</p>
+                            </div>
+
+
+                            <div class="hero">
+                            <h1>Web Design & Development.</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                 when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                                 . </p>
+                            
+                            </div>
+
+                            <img src="/assets/img/web-design-visual.png" alt="">
+                        </div>
+
+                        <div class="service-card three">
+
+                            <div class="top-bar">
+                                <img src="/assets/img/03.png" alt="">
+
+                                <p>Grow</p>
+                            </div>
+
+                            <div class="hero">
+                            <h1>Social Media Management.</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                 when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                                 . </p>
+
+                            
+
+                        </div>
+                        <img src="/assets/img/growth-visual.png" alt="">
+                        </div>
+
+                    </div>
                 
             </section>
 
             <!--=============== PORTFOLIO ===============-->
             <section class="section section__height container" id="work">
-                <h1>our work</h1>
+                <div class="swiper mySwiper">
+                    <h1>Our portfolio</h1>
+                    <div class="swiper-wrapper">
+                  <div class=" swiper-slide">
+                    <img src="/assets/portfolio_samples/image1.jpg" alt="">
+                    <div class="text-content">
+                      
+                      
+                    </div>
+                  </div>
+                  <div class=" swiper-slide">
+                    <img src="/assets/portfolio_samples/image2.jpg" alt="">
+                    <div class="text-content">
+                      
+                      
+                    </div>
+                  </div>
+                  <div class=" swiper-slide">
+                    <img src="/assets/portfolio_samples/image3.jpg" alt="">
+                    <div class="text-content">
+                      
+                      
+                    </div>
+                  </div>
+                  <div class=" swiper-slide">
+                    <img src="/assets/portfolio_samples/image4.png" alt="">
+                    <div class="text-content">
+                      
+                     
+                    </div>
+                  </div>
+                  <div class=" swiper-slide">
+                    <img src="/assets/portfolio_samples/image5.jpg" alt="">
+                    <div class="text-content">
+                      
+                     
+                    </div>
+                  </div>
+                  <div class=" swiper-slide">
+                    <img src="/assets/portfolio_samples/image6.jpg" alt="">
+                    <div class="text-content">
+                      
+                      
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+
                 
             </section>
 
             <!--=============== ABOUT ===============-->
             <section class="section section__height container" id="about">
-                <h1>About</h1>
+                <h1>Why Choose Mediafy for Your Business Growth?</h1>
+
+                <div class="seo-card">
+                    <h2>Struggling to Attract Clients <span class="purple-q">?</span></h2>
+                    <p>Are you finding it challenging to attract clients to your business? Mediafy specializes in crafting effective client acquisition strategies tailored to your unique needs, ensuring a steady flow of leads and opportunities. </p>
+                </div>
+
+                <div class="seo-card">
+                    <h2>Not Sure Which Niche to Focus On <span class="purple-q">?</span></h2>
+                    <p>Unsure about which niche to focus on for maximum growth potential? Let Mediafy's expertise help you identify the most profitable niche for your business, optimizing your chances of success in a competitive market. </p>
+                </div>
+
+                <div class="seo-card">
+                    <h2>Are you Looking to Create a Professional Logo <span class="purple-q">?</span></h2>
+                    <p> Wondering how to make a logo step by step? Mediafy offers expert guidance and design services to help you create a professional logo that represents your brand identity effectively. </p>
+                </div>
+
+                <div class="seo-card">
+                    <h2>Need a Website That Stands Out <span class="purple-q">?</span></h2>
+                    <p>Want to establish your online presence but not sure how to make a website for free? While free options exist, they may not provide the professional look and functionality your business needs. Mediafy offers professional website design services to ensure your online presence reflects the quality and professionalism of your brand. </p>
+                </div>
+               
+                
                 
             </section>
+
+        <footer>
+                
+            
+              
+                <h1 class="follow-us">follow us</h1>
+                
+            
+            
+            <div class="photos-email">          
+                <div>
+                    <a href=" https://www.instagram.com/mediafy.in?igsh=MWc4dXVrazJxY2xpag==">
+                        <img src="assets/img/instagram-icon.svg" alt="Instagram">
+                      </a>
+
+                      <a href="https://www.linkedin.com/">
+                        <img src="assets/img/linkedin-icon.svg" alt="Instagram">
+                      </a>
+
+                </div>
+                
+
+                <p>mediafyofficial@gmail.com</p>
+            </div>  
+        </footer>
 
            
 
@@ -101,6 +348,8 @@
         </main>
 
         <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
+        <script src="assets/js/main.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
     </body>
 </html>
